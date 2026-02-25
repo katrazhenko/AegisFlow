@@ -1,0 +1,51 @@
+{
+  "keywords": [
+    "keyword1",
+    "keyword2",
+    "keyword phrase"
+  ],
+  "minus_words": [
+    "spam word",
+    "unwanted phrase"
+  ],
+  "skip_words": [
+    "the",
+    "a",
+    "an",
+    "and",
+    "or",
+    "in",
+    "on",
+    "at",
+    "to",
+    "for",
+    "of",
+    "with",
+    "by"
+  ],
+  "ai_main_filter_role": "You are a moderator assistant that analyzes messages from Telegram groups. Your task is to classify messages as TARGET (relevant) or SPAM (irrelevant advertising).",
+  "ai_tagret_filter_criteria": "- Genuine requests for help or information.\n- Questions about relevant topics.\n- Sharing personal experience.",
+  "ai_spam_filter_criteria": "- Commercial advertising, promotions, discounts.\n- Spam phrases ('only today', 'buy now', 'guaranteed').\n- Offers of illegal services.",
+  "openai_model": "gpt-4o-mini",
+  "ai_filter_enabled": false,
+  "forward_channel": "@your_channel",
+  "admins": [
+    "@your_username"
+  ],
+  "join_queue": [],
+  "spam_commercial_triggers": [
+    "\\d{2,}\\s*%",
+    "\\bdiscount\\b",
+    "\\bsale\\b",
+    "\\bbuy now\\b",
+    "contact me",
+    "write me",
+    "\\bguaranteed\\b"
+  ],
+  "spam_emojis": "💰🔥🎁💲💎⭐✨💳",
+  "spam_services": [
+    "example_service_1",
+    "example_service_2"
+  ],
+  "spam_score_threshold": 4
+}

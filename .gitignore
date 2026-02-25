@@ -1,0 +1,11 @@
+.env
+*.session
+monitor.lock
+config/config.json
+logs/
+data/
+__pycache__/
+.venv/
+.pytest_cache/
+.idea/
+.vscode/
